@@ -1,0 +1,39 @@
+{
+	"builders":[
+	{
+  "type": "vmware",
+  "iso_url": "file:///Volumes/WD HDD/ISOs/ubuntu-12.04.1-server-amd64.iso",
+  "iso_checksum": "a8c667e871f48f3a662f3fbf1c3ddb17",
+  "iso_checksum_type": "md5",
+  "ssh_username": "vagrant",
+  "ssh_password": "vagrant",
+  "ssh_wait_timeout": "300s",
+  "shutdown_command": "echo vagrant | sudo -S shutdown -P now",
+  "output_directory": "example-ubuntu-vm",
+  "boot_command": [
+                "<esc><esc><enter><wait>",
+                "/install/vmlinuz noapic ",
+                "preseed/url=https://raw.github.com/chad-thompson/packer-example/master/ubuntu-simple-preseed.cfg ",
+                "debian-installer=en_US auto locale=en_US kbd-chooser/method=gb ",
+                "hostname=vagrant-precise64 ",
+                "fb=false debconf/frontend=noninteractive ",
+                "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=GB ",
+                "keyboard-configuration/variant=GB console-setup/ask_detect=false ",
+                "initrd=/install/initrd.gz -- <enter>"  ]
+}
+	
+	],
+	
+	"provisioners": [
+		{"type": "shell",
+		 "script": "configure.sh",
+		 "execute_command": "echo 'vagrant' | sudo -S sh '{{ .Path }}'"
+		 }
+	   
+	
+	]
+	
+	
+
+
+}
