@@ -1,0 +1,30 @@
+{
+	"builders":[
+	
+	{
+	  	"type": "amazon-ebs",
+  	  	"access_key": "ACCESS KEY",
+  		"secret_key": "SECRET KEY",
+  		"region": "us-east-1",
+  		"source_ami": "ami-d0f89fb9",
+  		"instance_type": "t1.micro",
+  		"ssh_username": "ubuntu",
+  		"ami_name": "packer-quick-start {{.CreateTime}}"
+	
+	}
+	
+	],
+	
+	"provisioners": [
+		{"type": "shell",
+		 "script": "configure.sh",
+		 "execute_command": "echo 'vagrant' | sudo -S sh '{{ .Path }}'"
+		 }
+	   
+	
+	]
+	
+	
+
+
+}
