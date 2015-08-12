@@ -2,11 +2,12 @@
 	"builders":[
 	{
   "type": "vmware",
-  "iso_url": "http://centosmirror.go4hosting.in/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1503-01.iso ",
-  "iso_checksum": "af5f788aee1b32c4b2634734309cc9e9",
   "iso_checksum_type": "md5",
-  "ssh_username": "ramit",
-  "ssh_password": "ramit",
+  "iso_checksum": "111379a06402e1e445c6aeee9401d031",
+  "iso_url": "http://centosmirror.go4hosting.in/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1503-01.iso ",
+  "type": "vmware-iso",
+  "ssh_username": "vagrant",
+  "ssh_password": "vagrant",
   "ssh_wait_timeout": "300s",
   "shutdown_command": "echo vagrant | sudo -S shutdown -P now",
   "output_directory": "example-centos-vm",
@@ -14,7 +15,6 @@
                 "<esc><esc><enter><wait>",
                 "/install/vmlinuz noapic ",
                 "preseed/url=https://raw.github.com/ramitsurana05/packer-all/master/centos-simple-preseed.cfg ",
-                "debian-installer=en_US auto locale=en_US kbd-chooser/method=gb ",
                 "hostname=vagrant-precise64 ",
                 "fb=false debconf/frontend=noninteractive ",
                 "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=GB ",
@@ -29,7 +29,7 @@
   		"region": "us-east-1",
   		"source_ami": "ami-d0f89fb9",
   		"instance_type": "t1.micro",
-  		"ssh_username": "ubuntu",
+  		"ssh_username": "redhat",
   		"ami_name": "packer-quick-start {{.CreateTime}}"
 	
 	}
