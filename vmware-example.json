@@ -2,7 +2,7 @@
 	"builders":[
 	{
   "type": "vmware",
-  "iso_url": "file:///Volumes/WD HDD/ISOs/ubuntu-12.04.1-server-amd64.iso",
+  "iso_url": "",
   "ssh_username": "vagrant",
   "ssh_password": "vagrant",
   "ssh_wait_timeout": "300s",
@@ -12,7 +12,6 @@
                 "<esc><esc><enter><wait>",
                 "/install/vmlinuz noapic ",
                 "preseed/url=https://raw.github.com/ramitsurana05/packer-all/master/centos-preseed.cfg ",
-                "debian-installer=en_US auto locale=en_US kbd-chooser/method=gb ",
                 "hostname=vagrant-precise64 ",
                 "fb=false debconf/frontend=noninteractive ",
                 "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=GB ",
