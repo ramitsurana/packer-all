@@ -8,7 +8,7 @@
   		"region": "us-east-1",
   		"source_ami": "ami-d0f89fb9",
   		"instance_type": "t1.micro",
-  		"ssh_username": "ubuntu",
+  		"ssh_username": "redhat",
   		"ami_name": "packer-quick-start {{.CreateTime}}"
 	
 	}
