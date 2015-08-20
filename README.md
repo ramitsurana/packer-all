@@ -36,3 +36,11 @@ At the same time, packer gives you flexibility to create images for individual p
 ## Get Involved
 
 Follow [these](https://guides.github.com/activities/contributing-to-open-source/) guidelines.
+
+##License
+
+  The work done has been licensed under Apache License 2.0.The license file can be found
+  [here](https://github.com/ramitsurana05/packer-all/blob/master/LICENSE).
+  You can find out more about license,at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
