@@ -6,7 +6,7 @@ yum install git -y;
 curl -L https://www.opscode.com/chef/install.sh \
 
 rm -r ../vendor/cookbooks
-berks	 install --path	 ../vendor/cookbooks
+bundle exec berks install --path vendor/cookbooks
 packer build \
   ‐var  "account_id=$AWS_ACCOUNT_ID" \
   ‐var  "aws_access_key_id=$AWS_ACCESS_KEY_ID" \
