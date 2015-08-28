@@ -1,10 +1,6 @@
 #!/bin/bash
 yum upgrade -f;
 yum install git -y;
-
- #If Chef is not installed
-curl -L https://www.opscode.com/chef/install.sh \
-
 rm -r ../vendor/cookbooks
 bundle exec berks install --path vendor/cookbooks
 packer build \
