@@ -26,7 +26,7 @@ Identical machine images across platforms, with CentOs 6.x running on them. Git,
 ## Instructions
 
   - Install [packer](http://packer.io) according to directions.
-  - Clone the repo: `git clone https://github.com/ramitsurana05/packer-all.git`
+  - Clone the repo: `git clone https://github.com/ramitsurana/packer-all.git`
   - Modify some basic settings as required.
   - Create idential machine images by single command: `packer build system-build.json`.
 
@@ -40,7 +40,7 @@ Follow [these](https://guides.github.com/activities/contributing-to-open-source/
 ##License
 
   The work done has been licensed under Apache License 2.0.The license file can be found
-  [here](https://github.com/ramitsurana05/packer-all/blob/master/LICENSE).
+  [here](https://github.com/ramitsurana/packer-all/blob/master/LICENSE).
   You can find out more about license,at
   
     http://www.apache.org/licenses/LICENSE-2.0
