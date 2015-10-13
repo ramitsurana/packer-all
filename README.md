@@ -44,3 +44,7 @@ Follow [these](https://guides.github.com/activities/contributing-to-open-source/
   You can find out more about license,at
   
     http://www.apache.org/licenses/LICENSE-2.0
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ramitsurana/packer-all/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
